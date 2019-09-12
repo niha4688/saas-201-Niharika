@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Enroll into department</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" text="text/css" href="milestone2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class="container-fluid" id="back-image">
+            <h2 align="center">FETCH DEPARTMENT DETAILS</h2>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                    
+                <form>
+                    
+                    <div class="form-group">
+                        Department:<!--<input list="dept" name="dept">
+                        <!--<datalist id="dept">
+                            <option value="Not selected"selected>
+                            <option value="EEE">
+                            <option value="CSE">
+                            <option value="MECH">
+                            <option value="CIVIL">
+                            <option value="BIO">
+                        </datalist>-->
+                        
+                        <select id="sel" class="form-control" required="true">
+                            <option selected>Not selected</option>
+                            <option value="eee">EEE</option>
+                            <option value="cse">CSE</option>
+                            <option value="mech">MECH</option>
+                            <option value="civil">CIVIL</option>
+                            <option value="bio">BIO</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        Section: 
+                        <select id="sel" class="form-control" required="true">
+                            <option selected>Any</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="alig">
+                        <!--<button type="Submit" class="btn btn-secondary float-right" value="go back" >-->
+                            <a href="view_details.html" class="btn btn-secondary" id="col">Go Back</a><!--Go Back</button>-->
+                        <button type="Submit" class="btn btn-success float-right" value="submit" id="but-hover">Get List</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <footer class="x">
+            <div class="container">
+                <center>
+                    <p>
+                    Copyright © Student Portal.All Rights Reserved | Contact Us:+91 9000000000
+                </p>
+                </center>
+            </div>
+        </footer>
+    </body>
+</html>
